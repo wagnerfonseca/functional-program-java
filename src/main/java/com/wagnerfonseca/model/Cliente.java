@@ -88,9 +88,8 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "nome=" + nome;
-	}
-
-		
+		return String.format("nome=%-10s | cidade=%-14s | estado=%2s | idade=%d", nome, cidade, estado, idade);
+		//return "Cliente [nome=" + nome + ", cidade=" + cidade + ", estado=" + estado + ", idade=" + idade + "]";
+	}		
 
 }
